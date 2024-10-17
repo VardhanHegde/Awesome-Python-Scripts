@@ -81,8 +81,8 @@ def organizer(directory):
                         destination = directory + folder 
                         
                 else:
-                    if os.path.isdir("Other") == False:
-                        os.mkdir(destination + "Other") #if 'Other' folder doesn't exist create it.
+                    if os.path.isdir(directory +"Other") == False:
+                        os.mkdir(directory + "Other") #if 'Other' folder doesn't exist create it.
                 print(src, "  ----------moved to-------->  ", destination, ",") #bash : message
                 try:
                     shutil.move(src, destination)
